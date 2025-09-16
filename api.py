@@ -41,6 +41,5 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    # Host 0.0.0.0 to listen on all network interfaces (so ESP32 can connect)
-    print("Starting Flask server...")
-    app.run(host='192.168.0.204', port=5000)
+   api.run()
+
